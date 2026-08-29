@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🎓 Student Grade Calculator</h1>
+            <p class="subtitle">Enter your marks and calculate your grade</p>
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <h3>📚 Enter Marks</h3>
+
+            <div class="subject">
+                <label>Mathematics</label>
+                <input type="number" id="maths" placeholder="Enter marks" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>Python</label>
+                <input type="number" id="python" placeholder="Enter marks" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>DBMS</label>
+                <input type="number" id="dbms" placeholder="Enter marks" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>Operating Systems</label>
+                <input type="number" id="os" placeholder="Enter marks" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>Computer Networks</label>
+                <input type="number" id="cn" placeholder="Enter marks" min="0" max="100">
+            </div>
+
+            <button onclick="calculateGrade()">Calculate Grade</button>
+
+            <div id="result" class="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
